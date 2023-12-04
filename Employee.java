@@ -17,9 +17,15 @@ public class Employee {
       this.manager = null;
   }
 
-  public double getSalary() { return salary; }
-  public String getDepartment() { return department; }
-  public Employee getManager() { return manager; }
+  public double getSalary() {
+    return salary;
+  }
+  public String getDepartment() {
+    return department;
+  }
+  public Employee getManager() {
+    return manager;
+  }
 
   public boolean changeManager(Employee manager) {
     if (isManagerValid(manager)) {
@@ -32,9 +38,13 @@ public class Employee {
     return false;
   }
 
-  public boolean isManager() { return manager == null; }
+  public boolean isManager() {
+    return manager == null;
+  }
 
-  public boolean isManagerValid(Employee manager) { return manager != null && manager.isManager() && manager.getDepartment().equals(department); }
+  public boolean isManagerValid(Employee manager) {
+    return manager != null && manager.isManager() && manager.getDepartment().equals(department);
+  }
 
   public boolean yearlyRaise(double performance) {
     if (performance > 100 || performance < 0)
@@ -84,7 +94,6 @@ public class Employee {
   }
 
   public static void main(String[] args) {
-
     System.out.println("Hello World");
     final Scanner scanner = new Scanner(System.in);
 

@@ -13,21 +13,37 @@ public class Book {
     this.pages = pages;
   }
 
-  public String getTitle() { return title; }
+  public String getTitle() {
+    return title;
+  }
 
-  public void setTitle(String title) { this.title = title; }
+  public void setTitle(String title) {
+    this.title = title;
+  }
 
-  public String getAuthor() { return author; }
+  public String getAuthor() {
+    return author;
+  }
 
-  public void setAuthor(String author) { this.author = author; }
+  public void setAuthor(String author) {
+    this.author = author;
+  }
 
-  public int getPages() { return pages; }
+  public int getPages() {
+    return pages;
+  }
 
-  public void setPages(int pages) { this.pages = pages; }
+  public void setPages(int pages) {
+    this.pages = pages;
+  }
 
-  public void updateTitle(String title) { this.title = title; }
+  public void updateTitle(String title) {
+    this.title = title;
+  }
 
-  public boolean compare(int pages) { return this.pages > pages; }
+  public boolean compare(int pages) {
+    return this.pages > pages;
+  }
 
   public boolean isThick() {
     if (!title.equals("Java Programming") && pages > 500) {
